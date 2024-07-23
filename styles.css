@@ -1,4 +1,7 @@
 
+html {
+  overflow-x: hidden
+}
 .logo{
     position: absolute;
     bottom: 16px; 
@@ -16,7 +19,7 @@
   .rectangle-1 {
     background-color: #332f2c;
     height: 250px;
-    width: 20000px;
+    width: 1500px;
   }
   .cards {
     position: absolute;
