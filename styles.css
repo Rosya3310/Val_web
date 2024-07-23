@@ -1,0 +1,283 @@
+
+.logo{
+    position: absolute;
+    bottom: 16px; 
+    left: 51%;
+    transform: translateX(-50%); 
+    bottom: -50px;
+    
+}
+.container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* стили прямоугольников */
+  .rectangle-1 {
+    background-color: #332f2c;
+    height: 250px;
+    width: 20000px;
+  }
+  .cards {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    scale: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    
+  }
+  .cards {
+    display: flex;
+    gap: 16px; /* Промежуток между колонками */
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Промежуток между карточками в колонке */
+}
+.yoru{
+    padding: 16px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+    box-sizing: border-box; /* Чтобы padding и border не увеличивали ширину карточки */
+}
+.killjoy {
+    
+    padding: 16px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+    box-sizing: border-box; /* Чтобы padding и border не увеличивали ширину карточки */
+}
+.KYO{
+   
+    padding: 16px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+    box-sizing: border-box; /* Чтобы padding и border не увеличивали ширину карточки */
+}
+.Chamber{
+
+    padding: 16px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+    box-sizing: border-box; /* Чтобы padding и border не увеличивали ширину карточки */
+}
+.Neon{
+    padding: 16px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+    box-sizing: border-box; /* Чтобы padding и border не увеличивали ширину карточки */
+}
+.Viper{
+    padding: 16px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+    box-sizing: border-box; /* Чтобы padding и border не увеличивали ширину карточки */
+}
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.yoru {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.yoru {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s; /* Плавное изменение трансформации */
+}
+
+/* Анимация для дергания карточки */
+.yoru.clicked {
+  animation: shake 0.5s; /* Длительность анимации */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.KYO {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.KYO{
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s; /* Плавное изменение трансформации */
+}
+
+/* Анимация для дергания карточки */
+.KYO.clicked {
+  animation: shake 0.5s; /* Длительность анимации */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.Neon {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Neon{
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s; /* Плавное изменение трансформации */
+}
+
+/* Анимация для дергания карточки */
+.Neon.clicked {
+  animation: shake 0.5s; /* Длительность анимации */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.killjoy {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.killjoy{
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s; /* Плавное изменение трансформации */
+}
+
+/* Анимация для дергания карточки */
+.killjoy.clicked {
+  animation: shake 0.5s; /* Длительность анимации */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+.Chamber {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Chamber{
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s; /* Плавное изменение трансформации */
+}
+
+/* Анимация для дергания карточки */
+.Chamber.clicked {
+  animation: shake 0.5s; /* Длительность анимации */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+.Viper {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Viper{
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s; /* Плавное изменение трансформации */
+}
+
+/* Анимация для дергания карточки */
+.Viper.clicked {
+  animation: shake 0.5s; /* Длительность анимации */
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
